@@ -1,16 +1,37 @@
-
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { marcas } from "../data/data";
 
 function Navbar() {
+  const [mostrarMenu, setMostrarMenu] = useState(false);
 
   return (
-<nav>
-<Link to="/">Inicio</Link>
-<Link to="/quienes-somos">Quienes somos</Link>
-<Link to="/productos">Productos</Link>
-<Link to="/contacto">Contacto</Link>
-</nav>
-)
+    <nav>
+      <Link to="/">Inicio</Link>{" | "}
+      <Link to="/quienes-somos">Quienes somos</Link>{" | "}
+      
+      <button onClick={() => setMostrarMenu(!mostrarMenu)}>
+        Productos ⌄
+      </button>
+
+      {mostrarMenu && (
+        <>
+          <Link to="/productos">Ver todos</Link>{" | "}
+          {marcas.map((marca) => (
+            <Link
+              key={marca.id}
+              to={`/productos/${marca.nombre.toLowerCase()}`}
+            >
+              {marca.nombre}
+            </Link>
+          ))}
+        </>
+      )}
+      
+      {" | "}
+      <Link to="/contacto">Contacto</Link>
+    </nav>
+  );
 }
 
-export default Navbar
+export default Navbar;
