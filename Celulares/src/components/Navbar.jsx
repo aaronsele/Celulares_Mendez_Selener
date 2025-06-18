@@ -20,7 +20,7 @@ function Navbar() {
           {marcas.map((marca) => (
             <Link
               key={marca.id}
-              to={`/productos/${marca.nombre.toLowerCase()}`}
+              to={`/productos/${marca.id}`}
             >
               {marca.nombre}
             </Link>

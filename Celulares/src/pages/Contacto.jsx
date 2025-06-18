@@ -1,11 +1,12 @@
-import FormContacto from "../components/FormContacto"
+import FormularioContacto from "../components/FormContacto"
+
 
 
 function Contacto() {
 
   return (
  <>
-   <FormContacto></FormContacto>
+   <FormularioContacto></FormularioContacto>
  </>
   )
 }

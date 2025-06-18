@@ -1,0 +1,15 @@
+.productos {
+    padding: 30px;
+  }
+  
+  .productos-titulo {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+  }
+  

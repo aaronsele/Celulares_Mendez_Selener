@@ -1,6 +1,6 @@
 
 
-function FormContacto() {
+function FormularioContacto() {
 
   function Alerta(e) {
     e.preventDefault();
@@ -30,4 +30,4 @@ function FormContacto() {
   )
 }
 
-export default FormContacto
+export default FormularioContacto
