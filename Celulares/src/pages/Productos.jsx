@@ -5,7 +5,6 @@ import './Productos.css';
 
 function Productos() {
   const { idMarca } = useParams();
-  console.log('idMarca que llegó:', idMarca);
   const celularesFiltrados = idMarca
     ? celulares.filter(celu => celu.marcaId === Number(idMarca))
     : celulares;

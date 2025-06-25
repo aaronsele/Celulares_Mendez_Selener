@@ -1,8 +1,10 @@
 import React from 'react';
 import './CardCelular.css';
+import { Link } from 'react-router-dom';
 
 function CardCelular({ celular }) {
   return (
+    <Link to={`/productos/producto-detalle/${celular.id}`}>
     <div className="card-celular">
       <div className="card-img">
         <img 
@@ -16,6 +18,7 @@ function CardCelular({ celular }) {
         <p className="card-price">${celular.precio.toLocaleString()}</p>
       </div>
     </div>
+    </Link>
   );
 }
 
