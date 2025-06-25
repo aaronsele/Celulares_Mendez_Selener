@@ -7,6 +7,10 @@ function Navbar() {
 
   return (
     <nav>
+    
+    <img src='/src/assets/logo.png' alt="Logo de Five GigaGuys"/>
+
+
       <Link to="/">Inicio</Link>{" | "}
       <Link to="/quienes-somos">Quienes somos</Link>{" | "}
       

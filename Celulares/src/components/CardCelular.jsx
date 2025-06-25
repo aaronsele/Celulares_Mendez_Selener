@@ -13,9 +13,9 @@ function CardCelular({ celular }) {
         />
       </div>
       <div className="card-info">
-        <h3 className="card-title">{celular.nombre}</h3>
-        <p className="card-desc">{celular.descripcion}</p>
-        <p className="card-price">${celular.precio.toLocaleString()}</p>
+        <h3 className="card-titulo">{celular.nombre}</h3>
+        <p className="card-descripcion">{celular.descripcion}</p>
+        <p className="card-precio">${celular.precio.toLocaleString()}</p>
       </div>
     </div>
     </Link>

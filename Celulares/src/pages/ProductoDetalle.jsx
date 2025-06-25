@@ -5,7 +5,7 @@ import './ProductoDetalle.css';
 function ProductoDetalle() {
   const { idCelular } = useParams();
   const celular = celulares.find(c => c.id === Number(idCelular));
-  
+
   console.log(idCelular);
 
   if (!celular) {
@@ -16,11 +16,11 @@ function ProductoDetalle() {
     <div className="producto-detalle">
       <h1>{celular.nombre}</h1>
       <div className="producto-detalle-info">
+
         <div className="producto-detalle-fotos">
-          {celular.fotos.map((foto, index) => (
-            <img key={index} src={foto} alt={`${celular.nombre} foto ${index + 1}`} />
-          ))}
+        <img src={celular.fotos[0]} alt={`${celular.nombre}`} />
         </div>
+
         <div className="producto-detalle-texto">
           <p><strong>Descripción:</strong> {celular.descripcion}</p>
           <p><strong>Precio:</strong> ${celular.precio.toLocaleString()}</p>
