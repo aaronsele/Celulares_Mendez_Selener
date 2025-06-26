@@ -1,0 +1,58 @@
+/* Info sections en fila con color más llamativo */
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 60px;
+  }
+  
+  .info-card {
+    flex: 1;
+    background:darkcyan; 
+    padding: 25px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(255, 87, 34, 0.4);
+    color: white;
+    text-align: center;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .info-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+  }
+  
+  .info-card p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #fffde7;
+  }
+  
+  .info-card:hover {
+    background-color:aquamarine;
+    cursor: default;
+  }
+  
+  /* Productos destacados en fila horizontal */
+  .productos-destacados .cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap; /* para que si hay muchos se acomoden */
+    justify-content: center;
+  }
+  
+  .productos-destacados h1 {
+    margin-bottom: 20px;
+  }
+  
+  /* Imagen principal de home */
+  .home-img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 40px;
+  }
+  

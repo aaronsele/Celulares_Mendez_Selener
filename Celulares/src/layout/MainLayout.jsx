@@ -8,9 +8,13 @@ function MainLayout() {
 <>
 <Navbar />
 
-<Footer />
+
 
 <Outlet />
+
+
+
+<Footer />
 </>
   )
 }

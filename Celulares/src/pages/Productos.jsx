@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom';
-import { celulares } from '../data/data';
+import { celulares, marcas } from '../data/data';
 import CardCelular from '../components/CardCelular';
 import './Productos.css';
 
@@ -9,11 +9,15 @@ function Productos() {
     ? celulares.filter(celu => celu.marcaId === Number(idMarca))
     : celulares;
 
+  const nombreMarca = idMarca 
+    ? marcas.find(marca => marca.id === Number(idMarca))?.nombre 
+    : null;
+
   return (
     <div className="productos">
       <h1 className="productos-titulo">
         {idMarca 
-          ? `Celulares de la marca ${idMarca}` 
+          ? `Celulares de la marca ${nombreMarca}` 
           : 'Todos los celulares'}
       </h1>
       <div className="productos-grid">

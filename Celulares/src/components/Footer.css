@@ -1,0 +1,24 @@
+.footer {
+    background-color: darkslategray;
+    color: #fff;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin-top: auto;
+    overflow-x: hidden; 
+  }
+  
+  
+  .footer-left img {
+    height: 30px; 
+  }
+  
+  .footer-right p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

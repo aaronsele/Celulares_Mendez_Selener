@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { marcas } from "../data/data";
+import './Navbar.css';
 
 function Navbar() {
   const [mostrarMenu, setMostrarMenu] = useState(false);
@@ -15,7 +16,7 @@ function Navbar() {
       <Link to="/quienes-somos">Quienes somos</Link>{" | "}
       
       <button onClick={() => setMostrarMenu(!mostrarMenu)}>
-        Productos ⌄
+        Productos +
       </button>
 
       {mostrarMenu && (

@@ -1,4 +1,4 @@
-
+import './FormContacto.css';
 
 function FormularioContacto() {
 
@@ -21,8 +21,8 @@ function FormularioContacto() {
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required></input>
       
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" required></input>
+        <label for="edad">Duda:</label>
+        <input type="text" id="duda" name="duda" required></input>
       
         <input type="submit" value="Submit"></input>
       </form>
