@@ -1,0 +1,39 @@
+.carrito-container {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrito-titulo {
+  margin-bottom: 20px;
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  background: url('/src/assets/fondoTitulo.jpg') center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: animate 10s linear infinite;
+}
+
+.carrito-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+@keyframes animate {
+  to {
+    background-position-x: -200px;
+  }
+}
+

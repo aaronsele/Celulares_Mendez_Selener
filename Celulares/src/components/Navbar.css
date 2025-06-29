@@ -69,3 +69,12 @@ nav {
     background-color: rgba(255, 255, 255, 0.3);
   }
   
+  .icono-carrito {
+  margin-left: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+.icono-carrito:hover {
+  color: darkcyan;
+}

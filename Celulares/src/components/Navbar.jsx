@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { marcas } from "../data/data";
+import { FaShoppingCart } from "react-icons/fa";
 import './Navbar.css';
 
 function Navbar() {
@@ -8,9 +9,7 @@ function Navbar() {
 
   return (
     <nav>
-    
-    <img src='/src/assets/logo.png' alt="Logo de Five GigaGuys"/>
-
+      <img src='/src/assets/logo.png' alt="Logo de Five GigaGuys" />
 
       <Link to="/">Inicio</Link>{" | "}
       <Link to="/quienes-somos">Quienes somos</Link>{" | "}
@@ -34,8 +33,13 @@ function Navbar() {
       )}
       
       {" | "}
-      <Link to="/contacto">Contacto</Link>
-       <Link to="/consultas">Consultas</Link>
+      <Link to="/contacto">Contacto</Link>{" | "}
+      <Link to="/consultas">Consultas</Link>{" | "}
+      
+      {/* Carrito */}
+      <Link to="/carrito" className="icono-carrito" title="Ver carrito">
+        <FaShoppingCart size={20} />
+      </Link>
     </nav>
   );
 }

@@ -7,6 +7,7 @@ import ProductoDetalle from './pages/ProductoDetalle';
 import QuienesSomos from './pages/QuienesSomos';
 import Productos from './pages/Productos';
 import Consultas from './pages/Consultas';
+import Carrito from './pages/Carrito';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 <Route path="/quienes-somos" element={<QuienesSomos />}></Route>
 <Route path="/contacto" element={<Contacto />}></Route>
 <Route path="/consultas" element={<Consultas />} />
+<Route path="/carrito" element={<Carrito />} />
 <Route path="*" element={<h1>404 😢</h1>}></Route>
 </Route>
 </Routes>
