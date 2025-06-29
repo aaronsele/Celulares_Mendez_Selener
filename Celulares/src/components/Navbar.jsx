@@ -35,6 +35,7 @@ function Navbar() {
       
       {" | "}
       <Link to="/contacto">Contacto</Link>
+       <Link to="/consultas">Consultas</Link>
     </nav>
   );
 }

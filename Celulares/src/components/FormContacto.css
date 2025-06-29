@@ -50,6 +50,14 @@ form {
   }
   
   input[type="submit"]:hover {
-    background-color:aquamarine;
+    cursor: pointer;
+    background: linear-gradient(45deg, #1ec79f, #11749e);
+    transition: all 0.2s;
+  }
+
+  input[type="submit"]:hover > div{
+    transform: translateX(-20px);
+    cursor: pointer;
+
   }
   
