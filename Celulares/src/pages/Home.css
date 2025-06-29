@@ -1,4 +1,4 @@
-/* Info sections en fila con color más llamativo */
+
 .info-sections {
     display: flex;
     justify-content: space-between;
@@ -35,11 +35,11 @@
     cursor: default;
   }
   
-  /* Productos destacados en fila horizontal */
+ 
   .productos-destacados .cards-container {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap; /* para que si hay muchos se acomoden */
+    flex-wrap: wrap; 
     justify-content: center;
   }
   
@@ -47,7 +47,6 @@
     margin-bottom: 20px;
   }
   
-  /* Imagen principal de home */
   .home-img {
     width: 100%;
     max-height: 400px;
@@ -55,4 +54,23 @@
     border-radius: 15px;
     margin-bottom: 40px;
   }
+
+ .titulo-home {
+  font-size: 4rem;
+  text-align: center;
+  font-weight: 900;
+  background: url('/src/assets/fondoTitulo.jpg') center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text; /* LA CLAVE */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Safari y más */
+  animation: animate 10s linear infinite;
+}
+
   
+  @keyframes animate{
+    to{
+      background-position-x: -200px;
+    }
+  }

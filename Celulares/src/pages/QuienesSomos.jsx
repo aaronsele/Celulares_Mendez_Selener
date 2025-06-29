@@ -3,7 +3,7 @@ import './QuienesSomos.css';
 function QuienesSomos() {
   return (
     <div className="qs-container">
-      <h1>¡Quiénes somos!</h1>
+      <h1  className="titulo-home">¿Quiénes somos?</h1>
 
       <div className="qs-info">
         <img

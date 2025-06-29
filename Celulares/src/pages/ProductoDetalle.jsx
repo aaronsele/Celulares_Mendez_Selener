@@ -10,7 +10,7 @@ function ProductoDetalle() {
   const [agregado, setAgregado] = useState(false);
 
   if (!celular) {
-    return <h2>Celular no encontrado 😢</h2>;
+    return <h2  className="titulo-home">Celular no encontrado 😢</h2>;
   }
 
   const handleAgregar = () => {
@@ -20,7 +20,7 @@ function ProductoDetalle() {
 
   return (
     <div className="producto-detalle">
-      <h1>{celular.nombre}</h1>
+      <h1  className="titulo-home">{celular.nombre}</h1>
       <div className="producto-detalle-info">
         <div className="producto-detalle-fotos">
           <img src={celular.fotos[0]} alt={`${celular.nombre}`} />

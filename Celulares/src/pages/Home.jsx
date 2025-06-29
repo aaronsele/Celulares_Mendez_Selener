@@ -5,7 +5,8 @@ import './Home.css';
 function Home() {
   return (
     <main>
-      <h1>Five GigaGuys</h1>
+     <h1 className="titulo-home">Five GigaGuys</h1>
+
       <img className="home-img" src="/src/assets/fotoHome.jpg" alt="Imagen Home" />
 
       <section className="info-sections">
@@ -24,7 +25,7 @@ function Home() {
       </section>
 
       <section className="productos-destacados">
-        <h1>Productos destacados:</h1>
+        <h1 className="titulo-home">Productos destacados:</h1>
         <div className="cards-container">
           <CardCelular celular={celulares[0]} />
           <CardCelular celular={celulares[4]} />

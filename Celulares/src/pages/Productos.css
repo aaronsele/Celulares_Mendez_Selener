@@ -6,9 +6,17 @@
 }
 
 .productos-titulo {
-  font-size: 1.8rem;
   margin-bottom: 20px;
+    font-size: 4rem;
   text-align: center;
+  font-weight: 900;
+  background: url('/src/assets/fondoTitulo.jpg') center;
+  background-size: cover;
+  background-clip: text;
+  -webkit-background-clip: text; /* LA CLAVE */
+  color: transparent;
+  -webkit-text-fill-color: transparent; /* Safari y más */
+  animation: animate 10s linear infinite;
 }
 
 .productos-grid {
@@ -23,3 +31,11 @@
   box-sizing: border-box;
 }
 
+
+
+  
+  @keyframes animate{
+    to{
+      background-position-x: -200px;
+    }
+  }
