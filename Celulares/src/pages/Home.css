@@ -1,4 +1,8 @@
 
+
+body{
+  background-color:antiquewhite;
+}
 .info-sections {
     display: flex;
     justify-content: space-between;
